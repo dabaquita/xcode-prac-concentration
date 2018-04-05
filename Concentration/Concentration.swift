@@ -16,7 +16,7 @@ class Concentration
     
     var indexOfOneAndOnlyFaceUpCard: Int?   // an optional because it could not be set
     
-    func chooseCar d(at index: Int) {
+    func chooseCard(at index: Int) {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
