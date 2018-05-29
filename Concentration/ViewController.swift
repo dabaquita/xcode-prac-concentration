@@ -21,8 +21,15 @@ class ViewController: UIViewController
         }
     }
     
+    // UI Outlets
     @IBOutlet weak var flipCountLabel: UILabel!
     @IBOutlet var cardButtons: [UIButton]!               // Array of UI buttons (Command Click to change stuff)
+    
+    // Creates a new game
+    @IBAction func newGame(_ sender: UIButton) {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +75,9 @@ class ViewController: UIViewController
     }
     
     var emojiChoices = ["👻", "🎃", "🔥", "😈", "😾", "🌚", "🍕", "🍎", "⛪️"]
-    
     // var emoji = Dictionary<Int, String>() - same thing as below
     var emoji = [Int:String]()
+    
     
     func emoji(for card: Card) -> String {
     
